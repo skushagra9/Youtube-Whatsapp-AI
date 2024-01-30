@@ -42,5 +42,10 @@ app.post('/', async (req, res) => {
   }
   res.status(200).send();
 });
+
+app.get("/back", async (req, res) => {
+  const { body } = req;
+})
+
 app.listen(port, () => console.log(`Express app running on port ${port}!`));
 
